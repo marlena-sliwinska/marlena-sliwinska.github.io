@@ -19,7 +19,7 @@
 
     <!-- uncomment the line below to enable PWA  -->
     <!-- <link rel="manifest" href="manifest.json" /> -->
-
+<!-- 
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -39,10 +39,10 @@
       rel="apple-touch-icon"
       sizes="120x120"
       href="pwa/apple-icon-120.png"
-    />
+    /> -->
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
+<!-- 
     <link
       rel="apple-touch-startup-image"
       href="pwa/apple-splash-2048-2732.png"
@@ -142,20 +142,23 @@
       rel="apple-touch-startup-image"
       href="pwa/apple-splash-1136-640.png"
       media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    /> -->
   </head>
   <body>
     <header></header>
     <main>
       <section class="aboutMe">
-        <article>
+       
+          <img class="aboutMe__avatar" src="../assets/img/avatar.jpg" alt="avatar">
+        
+        <article class="aboutMe__primary">
           My name is Marlena. I'm 29 years old and I'm newbie in IT. I'd like to
           become junior frontend developer, to combine my hobby with work. After
           work I like to keep healthy lifestyle. My values are freedom,
           minimalism, harmony, courage, balance, honesty, beauty, generosity,
           wisdom.
         </article>
-        <article>
+        <article class="aboutMe__secondary">
           If you are looking for an ambitious young co-worker you might check my
           skills and my projects. If you have any questions don't hesitate to
           contact me. If you are not interested with my resume, please, leave me
@@ -165,22 +168,20 @@
         <a href="mailto:marlenasliwinska@gmail.com"
           >marlenasliwinska@gmail.com</a
         >
-        <p>Thanks for your time!</p>
+        <p class="aboutMe__secondary">Thanks for your time!</p>
       </section>
-      <section>
-        <h1>My skills</h1>
-        <article>
-          <h2>Working knowledge</h2>
-          <ul>
-            <li>Semantic HTML5</li>
-            <li>CSS / SASS</li>
-            <li>BEM</li>
-
+      <section class="mySkills">
+        <h1 class="mySkills__header">My skills</h1>
+        <article  class="mySkills__list">
+          <h2 class="mySkills__headings">Working knowledge</h2>
+          <ul class="mySkills__knowledge">
+            <li class="test1">Semantic HTML5</li>             
+            <li class="test2">CSS / SASS</li>
+            <li class="test3">BEM</li>
             <li>Grid</li>
             <li>Flexbox</li>
             <li>Forms</li>
-            <li>Media queries</li>
-            <li>Figma</li>
+            <li>Media queries</li>           
           </ul>
         </article>
         <article>
@@ -189,7 +190,7 @@
             <li>Git</li>
             <li>Github</li>
             <li>JavaScript ES6</li>
-
+            <li>Figma</li>
             <li>NPM Script</li>
             <li>Webpack</li>
             <li>Forms</li>
@@ -210,8 +211,8 @@
           </ul>
         </article>
       </section>
-      <section>
-        <h1>Recent projects</h1>
+      <section class="projects">
+        <h1 class="projects__header">Recent projects</h1>
         <article>
           I have been working on my frontend developer skills since November
           2019. I've built some projects. Here you can find the list of the

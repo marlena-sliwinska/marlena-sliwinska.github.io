@@ -1,5 +1,113 @@
 @import "~normalize.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto+Mono&display=swap');
+
+@import "colors";
+
+@import "mixins";
+
+//MOBILE FIRST //
+
+
+html {
+    //  width: 100%;
+    
+ }
+
+
+body {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    // height: 100%;
+}
+
+
+
+.aboutMe {
+    text-align: center;
+    &__avatar {
+        width: 50px;
+    }
+&__primary {
+    @include MobileHeader200;
+
+}
+&__secondary {
+@include MobileText;
+}
+}
+
+
+
+.mySkills {
+    display: grid;
+    grid-template-areas: "header header header"
+    "first second third";
+
+    background-color: $Blue;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: $BlueLight;
+
+    &__header {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: $White;
+        // grid-column-start: 1;
+        // grid-column-end: 4;
+        grid-area: header;
+    }
+    &__heading {
+       
+        color: $White;
+    }
+  
+    &__list {
+     
+  //  padding-bottom: 16px;
+}
+  &__knowledge {
+    
+    list-style-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 0C10.72 0 10.47 0.11 10.29 0.29L4 6.59L1.71 4.29C1.53 4.11 1.28 4 1 4C0.45 4 0 4.45 0 5C0 5.28 0.11 5.53 0.29 5.71L3.29 8.71C3.47 8.89 3.72 9 4 9C4.28 9 4.53 8.89 4.71 8.71L11.71 1.71C11.89 1.53 12 1.28 12 1C12 0.45 11.55 0 11 0Z' fill='%2306C847'/%3E%3C/svg%3E%0A");
+   
+}
+}
+
+.test1 {
+    font-weight: 400;
+
+}
+
+.test2 {
+
+    font-weight: 300;
+
+}
+
+.test3 {
+
+font-weight: 700;
+}
+
+
+.projects {
+    text-align: center;
+    &__header {
+        @include MobileHeader100;
+       
+    }
+}
+
+//  body {
+//     font-family: 'Nunito', sans-serif;
+//     font-family: 'Roboto Mono', monospace;
+// }
+
 // @import "_variables";
 // @import "modules/hello.scss";
 

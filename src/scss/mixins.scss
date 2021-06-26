@@ -1,0 +1,50 @@
+@mixin MobileHeader200 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height, or 123% */
+  // display: flex;
+  // align-items: center;
+  color: $Black;
+}
+
+@mixin MobileHeader100 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  // /* identical to box height, or 133% */
+  // display: flex;
+  // align-items: center;
+  color: $Black;
+}
+
+@mixin MobileStyles {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 56px;
+  /* identical to box height, or 175% */
+  // display: flex;
+  // align-items: center;
+  color: $TextMuted;
+}
+
+@mixin MobileText {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+  // display: flex;
+  // align-items: center;
+  color: $Black;
+}
+
+@mixin MobileTextBold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+  // display: flex;
+  // align-items: center;
+
+  color: $Black;
+}

@@ -1,0 +1,106 @@
+text
+/* Mobile styles */
+// position: absolute;
+// width: 186px;
+// height: 56px;
+// font-family: Nunito;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 32px;
+// line-height: 56px;
+// /* identical to box height, or 175% */
+// display: flex;
+// align-items: center;
+/* Text/Text Muted */
+// color: #66788A;
+
+
+// /* Header 100 */
+
+// position: absolute;
+// width: 196px;
+// height: 48px;
+
+// /* Mobile/Header 100 */
+// font-family: Nunito;
+// font-style: normal;
+// font-weight: 700;
+// font-size: 36px;
+// line-height: 48px;
+// /* identical to box height, or 133% */
+// display: flex;
+// align-items: center;
+
+// color: #000000;
+
+/* Text */
+
+position: absolute;
+width: 30px;
+height: 32px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+/* Text bold */
+
+position: absolute;
+width: 69px;
+height: 32px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+/* Text bold */
+
+position: absolute;
+width: 69px;
+height: 32px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* Console content */
+
+position: absolute;
+width: 118px;
+height: 24px;
+
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 24px;
+/* identical to box height, or 185% */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+

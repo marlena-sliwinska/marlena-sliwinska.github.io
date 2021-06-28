@@ -99,14 +99,29 @@ body {
   &__header {
     @include MobileHeader100;
   }
+  &__box {
+  background-color: $Grey2;
+  
+  width: 287px;
+  }
+  &__description {
+  color: $Grey4;
+  text-align: right;
+  }
+  &__content {
+    
+    text-align: left;
+    &--name {
+      
+    }
+    }
 }
 .contact {
   text-align: center;
   background: $BlueLight;
   width: 100%;
-  
- 
   padding-bottom: 88px;
+  
   &__header {
     @include MobileHeader100;
     color: $TextDark;
@@ -128,6 +143,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    color: pink;
   }
 &__links {
  text-decoration: none;

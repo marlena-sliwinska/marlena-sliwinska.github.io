@@ -8,21 +8,18 @@
 
 //MOBILE FIRST //
 
-html {
-  //  width: 100%;
-}
 
 body {
-  width: 100%;
   font-family: "Nunito", sans-serif;
-  justify-content: center;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  // height: 100%;
-}
+  text-align: center;
+  justify-content: center;
+ }
 
 .aboutMe {
-  text-align: center;
+  
   margin: 64px 16px 88px 16px;
 
   &__avatar {
@@ -58,9 +55,8 @@ body {
   line-height: 24px;
   font-weight: 600;
   color: $BlueLight;
-  
   padding: 64px 16px 88px 16px;
-  text-align: center;
+  
   &__emoji {
     height: 72px;
   }
@@ -95,33 +91,65 @@ body {
 }
 
 .projects {
-  text-align: center;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+ 
+  @include MobileText;
   &__header {
     @include MobileHeader100;
+    margin-top: 64px;
+    margin-bottom: 32px;
   }
+&__intro {
+  margin-bottom: 46px;
+}
+
   &__box {
-  background-color: $Grey2;
+    background-color: $Grey2;
+    background-image: url(../assets/img/box.svg);
+    background-repeat: no-repeat;
+    background-position: left top; 
+    background-size: contain;
+    background-origin: padding-box;
+   
+    border-radius: 15px;
+    width: 287px;
+    height: 500px;
+    @include MobileConsole;
+    color: $Grey4;
+    margin-bottom: 24px;
+  }
+  &__table {
   
-  width: 287px;
+    width: 100%;
+    padding: 112px 16px 48px 16px;
+    border-spacing: 8px;
+    
+
   }
   &__description {
-  color: $Grey4;
-  text-align: right;
+    text-align: right;
+    vertical-align: top
   }
   &__content {
-    
     text-align: left;
+    color: $Grey5;
+    vertical-align: top;
     &--name {
-      
+      @include MobileConsoleBold;
+      color: $White;
     }
-    }
+  }
 }
+
 .contact {
-  text-align: center;
+ 
   background: $BlueLight;
   width: 100%;
   padding-bottom: 88px;
-  
+
   &__header {
     @include MobileHeader100;
     color: $TextDark;
@@ -134,31 +162,27 @@ body {
     color: $TextDefault;
     margin-top: 0;
     margin-bottom: 56px;
-
   }
-  &__box
-  {
+  &__box {
     margin-bottom: 64px;
     width: 180px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    color: pink;
   }
-&__links {
- text-decoration: none;
- &--img {
-  background: $White;
-  height: 24px;
-  padding: 24px;
-  border-radius: 50%;
- }
-
-}
-&__email {
-margin-top: 64px;
-margin-bottom: 0px;
-}
+  &__links {
+    text-decoration: none;
+    &--img {
+      background: $White;
+      height: 24px;
+      padding: 24px;
+      border-radius: 50%;
+    }
+  }
+  &__email {
+    margin-top: 64px;
+    margin-bottom: 0px;
+  }
 }
 
 .bold {
@@ -167,10 +191,6 @@ margin-bottom: 0px;
   margin: 0;
   text-decoration: none;
 }
-
-
-
-
 
 @media (min-width: 920px) {
   .mySkills {
@@ -181,7 +201,6 @@ margin-bottom: 0px;
       "first second third";
     &__header {
       grid-area: header;
-
     }
   }
 }

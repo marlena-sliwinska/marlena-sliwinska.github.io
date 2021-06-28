@@ -48,3 +48,15 @@
   color: $Black;
 }
 
+@mixin MobileConsole {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  font-weight: 400px;
+  line-height: 24px;
+}
+@mixin MobileConsoleBold {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  font-weight: 700px;
+  line-height: 24px;
+}

@@ -194,7 +194,7 @@ body {
 
 @media (min-width: 920px) {
   .mySkills {
-    color: red;
+    
     display: grid;
     grid-template-areas:
       "header header header"
@@ -202,7 +202,18 @@ body {
     &__header {
       grid-area: header;
     }
+
+
   }
+.projects {
+
+
+  &__box {
+    display: inline-block;
+    margin: 24px;
+  }
+
+}
 }
 //  body {
 //     font-family: 'Nunito', sans-serif;

@@ -26,7 +26,7 @@ fetch('https://api.github.com/users/marlena-sliwinska/repos')
             <td class="projects__content projects__content--name">${name}</td>
           </tr>
           <tr>
-            <td class="projects__description">description:</td>
+            <td class="projects__description" style ="height: 155px">description:</td>
             <td class="projects__content"
             style="padding-bottom: 16px;"
             >${description}</td>

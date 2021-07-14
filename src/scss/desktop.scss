@@ -4,8 +4,19 @@
     grid-template-areas:
       "header header header"
       "first second third";
+      max-width: 100vw;
+      margin: 0 auto;
     &__header {
+      @include Header100;
+           margin-top: 80px;
+      margin-bottom: 128px;
+      color: $White;
       grid-area: header;
+    }
+  
+    &__heading {
+      @include Text;
+      color: $White;
     }
   }
   .projects {
@@ -73,19 +84,6 @@
     &__email {
      
       @include TextBold;
-      color: $White;
-    }
-  }
-  .mySkills {
-    &__header {
-      @include Header100;
-     
-      margin-top: 80px;
-      margin-bottom: 128px;
-      color: $White;
-    }
-    &__heading {
-      @include Text;
       color: $White;
     }
   }

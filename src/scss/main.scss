@@ -135,14 +135,17 @@ body {
   &__description {
     text-align: right;
     vertical-align: top;
+   
   }
   &__content {
     text-align: left;
     color: $Grey5;
     vertical-align: top;
+    // height: 155px;
     &--name {
       @include MobileConsoleBold;
       color: $White;
+      height: 55px;
     }
   }
 }

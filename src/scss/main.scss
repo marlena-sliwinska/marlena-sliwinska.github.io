@@ -8,7 +8,6 @@
 
 //MOBILE FIRST //
 
-
 body {
   font-family: "Nunito", sans-serif;
   width: 100%;
@@ -16,11 +15,9 @@ body {
   flex-flow: column;
   align-items: center;
   text-align: center;
- 
- }
+}
 
 .aboutMe {
-  
   margin: 64px 16px 88px 16px;
 
   &__avatar {
@@ -31,7 +28,12 @@ body {
     transform: rotate(-24deg);
     margin-top: 34px;
     margin-bottom: 40px;
+ 
   }
+  &__cloud {
+    display: none;
+  }
+
   &__primary {
     @include MobileHeader200;
     margin-bottom: 16px;
@@ -57,24 +59,27 @@ body {
   font-weight: 600;
   color: $BlueLight;
   padding: 64px 16px 88px 16px;
-  
+
   &__emoji {
     height: 72px;
   }
   &__header {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
+    @include MobileHeader100;
+    
     color: $White;
     margin-top: 64px;
     margin-bottom: 64px;
+
   }
   &__heading {
+    @include Header300;
     color: $White;
     margin-top: 16px;
     margin-bottom: 24px;
   }
   &__list {
+    width: 288px;
+    margin: 0 auto;
     margin-bottom: 64px;
 
     &--knowledge {
@@ -96,25 +101,25 @@ body {
   flex-flow: column;
   width: 100%;
   align-items: center;
- 
+
   @include MobileText;
   &__header {
     @include MobileHeader100;
     margin-top: 64px;
     margin-bottom: 32px;
   }
-&__intro {
-  margin-bottom: 46px;
-}
+  &__intro {
+    margin-bottom: 46px;
+  }
 
   &__box {
     background-color: $Grey2;
     background-image: url(../assets/img/box.svg);
     background-repeat: no-repeat;
-    background-position: left top; 
+    background-position: left top;
     background-size: contain;
     background-origin: padding-box;
-   
+
     border-radius: 15px;
     width: 287px;
     height: 500px;
@@ -123,16 +128,13 @@ body {
     margin-bottom: 24px;
   }
   &__table {
-  
     width: 100%;
     padding: 112px 16px 48px 16px;
     border-spacing: 8px;
-    
-
   }
   &__description {
     text-align: right;
-    vertical-align: top
+    vertical-align: top;
   }
   &__content {
     text-align: left;
@@ -146,7 +148,6 @@ body {
 }
 
 .contact {
- 
   background: $BlueLight;
   width: 100%;
   padding-bottom: 88px;
@@ -193,83 +194,4 @@ body {
   text-decoration: none;
 }
 
-@media (min-width: 920px) {
-  .mySkills {
-    
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "first second third";
-    &__header {
-      grid-area: header;
-    }
-
-
-  }
-.projects {
-
-
-  &__box {
-    display: inline-block;
-    margin: 24px;
-      }
-}
-.aboutMe {
-
-// width: 830px;
-// box-sizing: content-box;
-
-margin: 0 auto;
-&__brackets {
-  
-  background-image: url(../assets/img/brackets.png) ;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  // padding: 0 550px;
-  width: 1450px;
-  margin: 0 auto;
-  padding: 0 350px;
-  box-sizing: border-box;
-}
-
-}
-
-// .aboutMe__brackets::before
-//  {
-//   content: url("data:image/svg+xml,%3Csvg width='85' height='252' viewBox='0 0 85 252' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M75.84 240.44C78.336 240.44 80.352 241.112 81.888 242.456C83.424 243.8 84.192 245.624 84.192 247.928C84.192 250.04 83.424 251.672 81.888 252.824C80.544 254.168 78.528 254.84 75.84 254.84H56.832C48.192 254.84 41.664 252.536 37.248 247.928C32.832 243.32 30.624 236.696 30.624 228.056V158.072C30.624 150.2 28.992 144.44 25.728 140.792C22.656 137.144 17.184 135.128 9.31199 134.744C3.74399 134.168 0.959991 131.672 0.959991 127.256C0.959991 125.336 1.63199 123.704 2.97599 122.36C4.51199 121.016 6.62399 120.248 9.31199 120.056C17.184 119.48 22.656 117.368 25.728 113.72C28.992 110.072 30.624 104.312 30.624 96.44V26.744C30.624 18.104 32.832 11.48 37.248 6.87196C41.664 2.26396 48.192 -0.0400391 56.832 -0.0400391H75.84C78.528 -0.0400391 80.544 0.631966 81.888 1.97597C83.424 3.12797 84.192 4.75996 84.192 6.87196C84.192 9.17596 83.424 11 81.888 12.344C80.352 13.688 78.336 14.36 75.84 14.36H60.576C52.128 14.36 47.904 18.776 47.904 27.608V98.168C47.904 106.424 45.888 113.048 41.856 118.04C38.016 122.84 33.216 125.912 27.456 127.256C33.216 128.6 38.016 131.768 41.856 136.76C45.888 141.56 47.904 148.088 47.904 156.344V227.192C47.904 236.024 52.128 240.44 60.576 240.44H75.84Z' fill='%23DBEAF7'/%3E%3C/svg%3E");
-//   position: relative;
-//   top: 0px;
-//   left: 0px;
-
-
-// }
-
-// .aboutMe__brackets::after
-// {
-//   content: url("data:image/svg+xml,%3Csvg width='84' height='252' viewBox='0 0 84 252' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M75.4045 120.056C80.9725 120.248 83.7565 122.648 83.7565 127.256C83.7565 131.672 80.9725 134.168 75.4045 134.744C67.7245 135.128 62.3485 137.144 59.2765 140.792C56.3965 144.248 54.9565 150.008 54.9565 158.072L54.3805 228.056C54.3805 236.696 52.1725 243.32 47.7565 247.928C43.3405 252.536 36.8125 254.84 28.1725 254.84H9.1645C6.4765 254.84 4.3645 254.168 2.8285 252.824C1.4845 251.672 0.8125 250.04 0.8125 247.928C0.8125 245.624 1.5805 243.8 3.1165 242.456C4.6525 241.112 6.6685 240.44 9.1645 240.44H24.4285C32.8765 240.44 37.1005 236.024 37.1005 227.192V156.344C37.1005 148.088 39.0205 141.56 42.8605 136.76C46.8925 131.768 51.6925 128.6 57.2605 127.256C51.6925 125.912 46.8925 122.84 42.8605 118.04C39.0205 113.048 37.1005 106.424 37.1005 98.168V27.608C37.1005 18.776 32.8765 14.36 24.4285 14.36H9.1645C6.6685 14.36 4.6525 13.688 3.1165 12.344C1.5805 11 0.8125 9.17596 0.8125 6.87196C0.8125 4.75996 1.4845 3.12797 2.8285 1.97597C4.3645 0.631966 6.4765 -0.0400391 9.1645 -0.0400391H28.1725C36.8125 -0.0400391 43.3405 2.26396 47.7565 6.87196C52.1725 11.48 54.3805 18.104 54.3805 26.744V96.44C54.3805 104.312 55.9165 110.072 58.9885 113.72C62.0605 117.368 67.5325 119.48 75.4045 120.056Z' fill='%23DBEAF7'/%3E%3C/svg%3E%0A");
-//   position: relative;
-//   top: 0px;
-//   right: 0px;
- 
-// }
-}
-
-
-
-//  body {
-//     font-family: 'Nunito', sans-serif;
-//     font-family: 'Roboto Mono', monospace;
-// }
-
-// @import "_variables";
-// @import "modules/hello.scss";
-
-// body {
-//   background: $wtf;
-//   color: #fff;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   min-height: 100vh;
-// }
+@import "desktop";

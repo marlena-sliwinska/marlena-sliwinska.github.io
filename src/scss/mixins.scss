@@ -2,9 +2,6 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 32px;
-  /* identical to box height, or 123% */
-  // display: flex;
-  // align-items: center;
   color: $Black;
 }
 
@@ -12,9 +9,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
-  // /* identical to box height, or 133% */
-  // display: flex;
-  // align-items: center;
   color: $Black;
 }
 
@@ -22,9 +16,6 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 56px;
-  /* identical to box height, or 175% */
-  // display: flex;
-  // align-items: center;
   color: $TextMuted;
 }
 
@@ -32,9 +23,6 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
-  /* identical to box height, or 200% */
-  // display: flex;
-  // align-items: center;
   color: $Black;
 }
 
@@ -42,21 +30,66 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
-  /* identical to box height, or 200% */
-  // display: flex;
-  // align-items: center;
   color: $Black;
 }
 
 @mixin MobileConsole {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 13px;
   font-weight: 400px;
   line-height: 24px;
 }
 @mixin MobileConsoleBold {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 13px;
   font-weight: 700px;
   line-height: 24px;
 }
+
+@mixin Header200 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: $Black;
+}
+
+@mixin Header100 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: $Black;
+}
+
+@mixin Header300 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  color: $Black;
+}
+
+@mixin Text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  color: $Black;
+}
+
+@mixin TextBold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: $Black;
+}
+
+@mixin Console {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+
+}
+@mixin ConsoleBold {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 24px; }

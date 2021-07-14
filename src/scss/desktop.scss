@@ -1,0 +1,109 @@
+@media (min-width: 920px) {
+  .mySkills {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "first second third";
+    &__header {
+      grid-area: header;
+    }
+  }
+  .projects {
+    &__box {
+      display: inline-block;
+      margin: 24px;
+    }
+  }
+  .aboutMe {
+    margin: 0 auto;
+  
+    &__avatar {
+      width: 178px;
+      height: 178px;
+      border: solid $BlueLightest 16px;
+      border-radius: 50%;
+      transform: rotate(-24deg);
+      margin-top: 34px;
+      margin-bottom: 40px;
+    }
+    &__cloud {
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+    }
+    &__greetings {
+      background-color: $Blue;
+      font-weight: 700;
+      color: $White;
+      width: 230px;
+      height: 72px;
+      font-size: 32px;
+      border-radius: 10px;
+      display: inline-block;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      margin: 0 auto;
+    }
+    &__speechCloud {
+      position: relative;
+      left: -70px;
+    }
+    &__brackets {
+      background-image: url(../assets/img/brackets.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      width: 1750px;
+      margin: 0 auto;
+      padding: 0 350px;
+      box-sizing: border-box;
+    }
+ 
+
+    &__primary {
+      @include Header200;
+      
+    }
+    &__secondary {
+      @include Text;
+      
+    }
+    &__email {
+     
+      @include TextBold;
+      color: $White;
+    }
+  }
+  .mySkills {
+    &__header {
+      @include Header100;
+     
+      margin-top: 80px;
+      margin-bottom: 128px;
+      color: $White;
+    }
+    &__heading {
+      @include Text;
+      color: $White;
+    }
+  }
+
+  .contact {
+ 
+  
+    &__header {
+      @include Header100;
+      color: $TextDark;
+    
+    }
+  
+    &__text {
+      @include Text;
+      color: $TextDefault;
+  
+    }
+   
+  }
+}

@@ -58,7 +58,9 @@ body {
   line-height: 24px;
   font-weight: 600;
   color: $BlueLight;
-  padding: 64px 16px 88px 16px;
+  padding-top: 64px;
+  padding-bottom: 88px;
+
 
   &__emoji {
     height: 72px;
@@ -78,7 +80,7 @@ body {
     margin-bottom: 24px;
   }
   &__list {
-    width: 288px;
+    max-width: 288px;
     margin: 0 auto;
     margin-bottom: 64px;
 
@@ -110,6 +112,7 @@ body {
   }
   &__intro {
     margin-bottom: 46px;
+    max-width: 90vw;
   }
 
   &__box {
@@ -152,7 +155,7 @@ body {
 
 .contact {
   background: $BlueLight;
-  width: 100%;
+  width: 100vw;
   padding-bottom: 88px;
 
   &__header {

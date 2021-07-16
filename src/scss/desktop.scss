@@ -24,6 +24,12 @@
       display: inline-block;
       margin: 24px;
     }
+    &__intro {
+      margin-bottom: 46px;
+      @include Text;
+      max-width: 80vw;
+
+    }
   }
   .aboutMe {
     margin: 0 auto;
@@ -66,20 +72,27 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center center;
-      width: 1750px;
+      
       margin: 0 auto;
-      padding: 0 350px;
+     
       box-sizing: border-box;
     }
  
 
     &__primary {
       @include Header200;
-      
+      padding: 0 70px;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-bottom: 24px;
     }
     &__secondary {
       @include Text;
-      
+      padding: 0 70px;
+      max-width: 1000px;
+      margin: 0 auto;
+     
+      margin-bottom: 48px;
     }
     &__email {
      

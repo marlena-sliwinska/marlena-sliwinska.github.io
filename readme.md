@@ -1,12 +1,14 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://marlena-sliwinska.github.io/og.png)
 
-# WTF Webpack Starter Kit 
+### Portfolio / Resume
 
-Simple toolkit for your static websites development.
 
-## How to use it?
+>"I don't divide the world into the weak and the strong, or the successes and the failures... I divide the world into the learners and nonlearners."
+Benjamin Barber
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+## How to run it?
+
+`npm run start` - firstly install download and install Node.js and npm
 
 ## Available scripts
 

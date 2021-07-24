@@ -11,7 +11,7 @@
     grid-template-areas:
       "header header header"
       "first second third";
-    max-width: 100vw;
+    max-width: 1184px;
     margin: 0 auto;
 
     &__header {
@@ -38,7 +38,6 @@
     &__intro {
       margin-bottom: 46px;
       @include Text;
-      max-width: 80vw;
     }
   }
 

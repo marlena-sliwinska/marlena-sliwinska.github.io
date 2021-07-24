@@ -2,6 +2,8 @@
   background: $BlueLight;
   width: 100vw;
   padding-bottom: 88px;
+  padding-top: 64px;
+  margin-top: 64px;
 
   &__header {
     @include MobileHeader100;

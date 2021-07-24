@@ -1,3 +1,10 @@
+@media (min-width: 768px) {
+  .projects__box {
+    display: inline-block;
+    margin: 24px;
+  }
+}
+
 @media (min-width: 920px) {
   .mySkills {
     display: grid;
@@ -22,10 +29,6 @@
   }
 
   .projects {
-    &__box {
-      display: inline-block;
-      margin: 24px;
-    }
     &__header {
       @include Header100;
 
@@ -80,23 +83,31 @@
       background-image: url(../assets/img/brackets.png);
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: center center;
+      background-position: top center;
     }
 
     &__primary {
       @include Header200;
-      padding: 0 80px;
+      padding: 0 70px;
       max-width: 1000px;
       margin: 0 auto;
+      margin-bottom: 48px;
     }
 
     &__secondary {
       @include Text;
-      padding: 0 80px;
+      padding: 0 90px;
       max-width: 1000px;
       margin: 0 auto;
       margin-top: 24px;
       margin-bottom: 48px;
+      text-align: justify;
+      text-indent: 5em;
+
+      &--thanks {
+        text-align: center;
+        text-indent: 0;
+      }
     }
 
     &__email {

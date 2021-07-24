@@ -15,19 +15,20 @@ fetch('https://api.github.com/users/marlena-sliwinska/repos')
         <article class="projects__box ">
         <table class="projects__table">
             <tr>
-            <td class="projects__description">project:</td>
+            <td class="projects__label">project:</td>
             <td class="projects__content projects__content--name">${name}</td>
           </tr>
           <tr>
-            <td class="projects__description" style ="height: 155px">description:</td>
+            <td class="projects__label" style ="height: 155px">description:</td>
             <td class="projects__content"
             style="padding-bottom: 16px;"
             >${description}</td>
           </tr>
           <tr>
           
-            <td class="projects__description">demo:</td>
+            <td class="projects__label">demo:</td>
             <td class="projects__content"><<a
+              title= "${name}"
               style ="color: #14B5D0"
               href="${homepage}"
               target="_blank"
@@ -35,8 +36,9 @@ fetch('https://api.github.com/users/marlena-sliwinska/repos')
               >see here</a>></td>
           </tr>
           <tr>
-            <td class="projects__description">github:</td>
+            <td class="projects__label">github:</td>
             <td class="projects__content"><<a 
+            title= "${name}"
               style ="color: #14B5D0"
               href="${html_url}"
               target="_blank"

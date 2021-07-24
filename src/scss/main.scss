@@ -109,7 +109,7 @@ body {
     }
   }
 
-  &__list>li {
+  li {
     padding-bottom: 16px;
     text-align: left;
   }
@@ -120,7 +120,6 @@ body {
   flex-flow: column;
   width: 100%;
   align-items: center;
-
   @include MobileText;
 
   &__header {
@@ -156,7 +155,7 @@ body {
     border-spacing: 8px;
   }
 
-  &__description {
+  &__label {
     text-align: right;
     vertical-align: top;
 
@@ -220,11 +219,10 @@ body {
   }
 }
 
-.bold {
+.aboutMe--bold {
   color: $Blue;
-  display: inline-block;
-  margin: 0;
   text-decoration: none;
+  font-weight: 700;
 }
 
 @import "desktop";

@@ -28,17 +28,17 @@ body {
 }
 
 .aboutMe {
-  margin: 64px 16px 88px 16px;
+  margin-top: 64px;
 
   &__avatar {
     box-sizing: content-box;
     width: 96px;
     height: 96px;
-    border: solid $BlueLightest 16px;
     border-radius: 50%;
     transform: rotate(-24deg);
     margin-top: 34px;
     margin-bottom: 40px;
+    box-shadow: 0 0 16px $Grey4;
   }
 
   &__cloud {
@@ -52,7 +52,9 @@ body {
 
   &__secondary {
     @include MobileText;
-    margin-bottom: 48px;
+
+    margin-bottom: 32px;
+    padding: 0 64px;
   }
 
   &__email {
@@ -74,7 +76,6 @@ body {
   background-color: $Blue;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 600;
   color: $BlueLight;
   padding-top: 64px;
   padding-bottom: 88px;
@@ -141,13 +142,15 @@ body {
     background-position: left top;
     background-size: contain;
     background-origin: padding-box;
-
     border-radius: 15px;
-    width: 287px;
+    width: 300px;
     height: 500px;
     @include MobileConsole;
     color: $Grey4;
     margin-bottom: 24px;
+    box-shadow: 0 0 12px $Grey4;
+    // overflow-x: auto;
+    // overflow-y: hidden;
   }
 
   &__table {
@@ -211,10 +214,13 @@ body {
 
     &--img {
       background: $White;
-      height: 24px;
-      padding: 24px;
+      height: 30px;
+      padding: 12px;
+
       border-radius: 50%;
+
       box-sizing: content-box;
+      box-shadow: 0 0 16px $White;
     }
   }
 }

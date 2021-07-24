@@ -26,32 +26,35 @@
       display: inline-block;
       margin: 24px;
     }
+    &__header {
+      @include Header100;
+
+      margin-bottom: 40px;
+    }
 
     &__intro {
       margin-bottom: 46px;
       @include Text;
       max-width: 80vw;
-
     }
   }
 
   .aboutMe {
     margin: 0 auto;
+    margin-top: 90px;
 
     &__avatar {
       width: 178px;
       height: 178px;
-      border: solid $BlueLightest 16px;
-      border-radius: 50%;
-      transform: rotate(-24deg);
       margin-top: 34px;
       margin-bottom: 40px;
+      box-shadow: 0 0 24px $Grey4;
     }
 
     &__cloud {
       display: inline-block;
       position: absolute;
-      top: 15px;
+      top: 75px;
     }
 
     &__cloudTxt {
@@ -62,12 +65,11 @@
       height: 72px;
       font-size: 32px;
       border-radius: 10px;
-      display: inline-block;
+
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-content: center;
-      margin: 0 auto;
     }
 
     &__cloudImg {
@@ -80,51 +82,39 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center center;
-
-      margin: 0 auto;
-
-      box-sizing: border-box;
     }
-
 
     &__primary {
       @include Header200;
-      padding: 0 70px;
+      padding: 0 80px;
       max-width: 1000px;
       margin: 0 auto;
-      margin-bottom: 24px;
     }
 
     &__secondary {
       @include Text;
-      padding: 0 70px;
+      padding: 0 80px;
       max-width: 1000px;
       margin: 0 auto;
-
+      margin-top: 24px;
       margin-bottom: 48px;
     }
 
     &__email {
-
       @include TextBold;
       color: $White;
     }
   }
 
   .contact {
-
-
     &__header {
       @include Header100;
       color: $TextDark;
-
     }
 
     &__text {
       @include Text;
       color: $TextDefault;
-
     }
-
   }
 }

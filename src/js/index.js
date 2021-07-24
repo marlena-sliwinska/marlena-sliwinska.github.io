@@ -1,12 +1,5 @@
 import '../scss/main.scss';
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
-
-/* place your code below */
-
-
 
 fetch('https://api.github.com/users/marlena-sliwinska/repos')
   .then(response => response.json())

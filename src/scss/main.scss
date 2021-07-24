@@ -1,5 +1,15 @@
 @import "~normalize.css";
 
+html {
+  box-sizing: border-box;
+}
+
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto+Mono&display=swap");
 
 @import "colors";
@@ -28,8 +38,9 @@ body {
     transform: rotate(-24deg);
     margin-top: 34px;
     margin-bottom: 40px;
- 
+
   }
+
   &__cloud {
     display: none;
   }
@@ -38,10 +49,12 @@ body {
     @include MobileHeader200;
     margin-bottom: 16px;
   }
+
   &__secondary {
     @include MobileText;
     margin-bottom: 48px;
   }
+
   &__email {
     background-color: $Link;
     @include MobileTextBold;
@@ -65,20 +78,23 @@ body {
   &__emoji {
     height: 72px;
   }
+
   &__header {
     @include MobileHeader100;
-    
+
     color: $White;
     margin-top: 64px;
     margin-bottom: 64px;
 
   }
+
   &__heading {
     @include Header300;
     color: $White;
     margin-top: 16px;
     margin-bottom: 24px;
   }
+
   &__list {
     max-width: 288px;
     margin: 0 auto;
@@ -87,12 +103,13 @@ body {
     &--knowledge {
       list-style-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 0C10.72 0 10.47 0.11 10.29 0.29L4 6.59L1.71 4.29C1.53 4.11 1.28 4 1 4C0.45 4 0 4.45 0 5C0 5.28 0.11 5.53 0.29 5.71L3.29 8.71C3.47 8.89 3.72 9 4 9C4.28 9 4.53 8.89 4.71 8.71L11.71 1.71C11.89 1.53 12 1.28 12 1C12 0.45 11.55 0 11 0Z' fill='%2306C847'/%3E%3C/svg%3E%0A");
     }
+
     &--something {
       list-style-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 0.5C10.72 0.5 10.47 0.61 10.29 0.79L4 7.09L1.71 4.79C1.53 4.61 1.28 4.5 1 4.5C0.45 4.5 0 4.95 0 5.5C0 5.78 0.11 6.03 0.29 6.21L3.29 9.21C3.47 9.39 3.72 9.5 4 9.5C4.28 9.5 4.53 9.39 4.71 9.21L11.71 2.21C11.89 2.03 12 1.78 12 1.5C12 0.95 11.55 0.5 11 0.5Z' fill='%23DBEAF7'/%3E%3C/svg%3E%0A");
     }
   }
 
-  &__list > li {
+  &__list>li {
     padding-bottom: 16px;
     text-align: left;
   }
@@ -105,11 +122,13 @@ body {
   align-items: center;
 
   @include MobileText;
+
   &__header {
     @include MobileHeader100;
     margin-top: 64px;
     margin-bottom: 32px;
   }
+
   &__intro {
     margin-bottom: 46px;
     max-width: 90vw;
@@ -130,20 +149,24 @@ body {
     color: $Grey4;
     margin-bottom: 24px;
   }
+
   &__table {
     width: 100%;
     padding: 112px 16px 48px 16px;
     border-spacing: 8px;
   }
+
   &__description {
     text-align: right;
     vertical-align: top;
-   
+
   }
+
   &__content {
     text-align: left;
     color: $Grey5;
     vertical-align: top;
+
     // height: 155px;
     &--name {
       @include MobileConsoleBold;
@@ -171,6 +194,7 @@ body {
     margin-top: 0;
     margin-bottom: 56px;
   }
+
   &__box {
     margin-bottom: 64px;
     width: 180px;
@@ -178,8 +202,10 @@ body {
     justify-content: space-between;
     margin: 0 auto;
   }
+
   &__links {
     text-decoration: none;
+
     &--img {
       background: $White;
       height: 24px;
@@ -187,6 +213,7 @@ body {
       border-radius: 50%;
     }
   }
+
   &__email {
     margin-top: 64px;
     margin-bottom: 0px;

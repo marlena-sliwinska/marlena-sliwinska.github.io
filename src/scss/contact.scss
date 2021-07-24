@@ -1,0 +1,47 @@
+.contact {
+  background: $BlueLight;
+  width: 100vw;
+  padding-bottom: 88px;
+
+  &__header {
+    @include MobileHeader100;
+    color: $TextDark;
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    @include MobileText;
+    color: $TextDefault;
+    margin-top: 0;
+    margin-bottom: 56px;
+  }
+
+  &__email {
+    margin-top: 64px;
+    margin-bottom: 0px;
+  }
+}
+
+.social-media {
+  margin-bottom: 64px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &__links {
+    text-decoration: none;
+
+    &--img {
+      background: $White;
+      height: 30px;
+      padding: 12px;
+
+      border-radius: 50%;
+
+      box-sizing: content-box;
+      box-shadow: 0 0 16px $White;
+    }
+  }
+}

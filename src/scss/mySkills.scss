@@ -1,0 +1,44 @@
+.mySkills {
+  background-color: $Blue;
+  font-size: 16px;
+  line-height: 24px;
+  color: $BlueLight;
+  padding-top: 64px;
+  padding-bottom: 88px;
+
+  &__emoji {
+    height: 72px;
+  }
+
+  &__header {
+    @include MobileHeader100;
+    color: $White;
+    margin-bottom: 64px;
+  }
+
+  &__headings {
+    @include Header300;
+    color: $White;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    max-width: 288px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+
+    &--knowledge {
+      list-style-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 0C10.72 0 10.47 0.11 10.29 0.29L4 6.59L1.71 4.29C1.53 4.11 1.28 4 1 4C0.45 4 0 4.45 0 5C0 5.28 0.11 5.53 0.29 5.71L3.29 8.71C3.47 8.89 3.72 9 4 9C4.28 9 4.53 8.89 4.71 8.71L11.71 1.71C11.89 1.53 12 1.28 12 1C12 0.45 11.55 0 11 0Z' fill='%2306C847'/%3E%3C/svg%3E%0A");
+    }
+
+    &--something {
+      list-style-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 0.5C10.72 0.5 10.47 0.61 10.29 0.79L4 7.09L1.71 4.79C1.53 4.61 1.28 4.5 1 4.5C0.45 4.5 0 4.95 0 5.5C0 5.78 0.11 6.03 0.29 6.21L3.29 9.21C3.47 9.39 3.72 9.5 4 9.5C4.28 9.5 4.53 9.39 4.71 9.21L11.71 2.21C11.89 2.03 12 1.78 12 1.5C12 0.95 11.55 0.5 11 0.5Z' fill='%23DBEAF7'/%3E%3C/svg%3E%0A");
+    }
+  }
+
+  li {
+    padding-bottom: 16px;
+    text-align: left;
+  }
+}

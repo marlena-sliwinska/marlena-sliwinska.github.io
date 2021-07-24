@@ -1,0 +1,59 @@
+.projects {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+  @include MobileText;
+
+  &__header {
+    @include MobileHeader100;
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+
+  &__intro {
+    margin-bottom: 46px;
+    max-width: 90vw;
+  }
+
+  &__box {
+    background-color: $Grey2;
+    background-image: url(../assets/img/box.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    background-origin: padding-box;
+    border-radius: 15px;
+    width: 300px;
+    height: 500px;
+    @include MobileConsole;
+    color: $Grey4;
+    margin-bottom: 24px;
+    box-shadow: 0 0 12px $Grey4;
+    // overflow-x: auto;
+    // overflow-y: hidden;
+  }
+
+  &__table {
+    width: 100%;
+    padding: 112px 16px 48px 16px;
+    border-spacing: 8px;
+  }
+
+  &__label {
+    text-align: right;
+    vertical-align: top;
+  }
+
+  &__content {
+    text-align: left;
+    color: $Grey5;
+    vertical-align: top;
+
+    &--name {
+      @include MobileConsoleBold;
+      color: $White;
+      height: 55px;
+    }
+  }
+}

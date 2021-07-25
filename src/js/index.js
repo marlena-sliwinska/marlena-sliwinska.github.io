@@ -1,4 +1,5 @@
 import "../scss/main.scss";
+console.log("Hi, Ma name is Marlena. Nice to meet you");
 
 fetch("https://api.github.com/users/marlena-sliwinska/repos")
   .then((response) => response.json())

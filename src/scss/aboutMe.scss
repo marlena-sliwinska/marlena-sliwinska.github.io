@@ -14,6 +14,20 @@
 
   &__cloud {
     display: none;
+
+    &--hand {
+      color: #fbd771;
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(60deg);
+        }
+      }
+      animation: rotate 5s infinite ease-in-out alternate;
+    }
   }
 
   &__primary {

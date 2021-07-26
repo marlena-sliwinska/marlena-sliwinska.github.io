@@ -6,11 +6,11 @@ fetch("https://api.github.com/users/marlena-sliwinska/repos")
   .then((response) => {
     for (let repo of response) {
       const { name, description, html_url, homepage } = repo;
-
-      console.log(`Project named ${name} - ${description}. 
+      if (description) {
+        console.log(`Project named ${name} - ${description}. 
           You can find link to repository here:  i srodowisko: ${homepage}`);
-      const portfolio = document.querySelector(".project__box--js");
-      const myBox = `
+        const portfolio = document.querySelector(".project__box--js");
+        const myBox = `
         <article class="projects__box ">
         <table class="projects__table">
             <tr>
@@ -46,7 +46,8 @@ fetch("https://api.github.com/users/marlena-sliwinska/repos")
           </tr>
         </table>
         </article>`;
-      portfolio.innerHTML += myBox;
+        portfolio.innerHTML += myBox;
+      }
     }
   })
   .catch((error) => {

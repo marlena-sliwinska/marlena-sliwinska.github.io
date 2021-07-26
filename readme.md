@@ -1,4 +1,4 @@
-![cover](https://marlena-sliwinska.github.io/og.png)
+![cover](https://marlena-sliwinska.github.io/OGimage.png)
 
 ### Portfolio / Resume
 

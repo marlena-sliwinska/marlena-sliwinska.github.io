@@ -14,19 +14,19 @@
 
   &__cloud {
     display: none;
-
+    transform-origin: bottom right;
     &--hand {
-      color: #fbd771;
-
+      color: #e9d7a4;
+      top: 0%;
       @keyframes rotate {
         from {
-          transform: rotate(0deg);
+          transform: rotate(25deg);
         }
         to {
-          transform: rotate(60deg);
+          transform: rotate(45deg);
         }
       }
-      animation: rotate 5s infinite ease-in-out alternate;
+      animation: rotate 0.8s infinite ease-in-out alternate;
     }
   }
 

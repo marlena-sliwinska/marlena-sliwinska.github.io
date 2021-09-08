@@ -65,21 +65,17 @@ module.exports = {
         {
           from: "public",
           globOptions: {
-            ignore: [
-              '**/*.DS_Store'
-            ],
+            ignore: ["**/*.DS_Store"],
           },
         },
       ],
     }),
 
-    /* here you can define another html file and its dependencies */
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
       chunks: ["index"],
       filename: "index.html",
     }),
-
   ],
 };

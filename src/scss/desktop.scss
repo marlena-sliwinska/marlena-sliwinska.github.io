@@ -51,7 +51,6 @@
 
       margin-bottom: 40px;
     }
-
     &__intro {
       margin-bottom: 46px;
       @include Text;
@@ -81,7 +80,11 @@
       background-repeat: no-repeat;
       background-position: center center;
     }
-
+    &__cloudTxt:hover {
+      color: white;
+      text-shadow: white;
+      transition: all 2s;
+    }
     &__cloudTxt {
       font-family: "Charmonman", cursive;
       letter-spacing: 5px;
@@ -91,6 +94,7 @@
       font-size: 32px;
       top: 30px;
       left: 5px;
+      transition: all 1.5s;
     }
 
     &__cloudImg {

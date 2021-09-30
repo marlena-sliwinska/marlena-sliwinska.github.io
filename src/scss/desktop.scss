@@ -151,9 +151,12 @@
     top: 35px;
   }
   .aboutMe__brackets::before {
+    background-image: url("../assets/img/leftcode.svg");
+  }
+  .aboutMe__brackets::before {
     animation: bracketLeft 0.8s ease-in-out;
   }
   .aboutMe__brackets::after {
-    animation: bracketRight 0.8s ease-in-out;
+    animation: bracketRight 1.8s ease-in-out;
   }
 }

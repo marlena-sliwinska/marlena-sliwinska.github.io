@@ -14,20 +14,6 @@
 
   &__cloud {
     display: none;
-    transform-origin: bottom right;
-    &--hand {
-      color: #e9d7a4;
-      top: 0%;
-      @keyframes rotate {
-        from {
-          transform: rotate(25deg);
-        }
-        to {
-          transform: rotate(45deg);
-        }
-      }
-      animation: rotate 0.8s infinite ease-in-out alternate;
-    }
   }
 
   &__primary {
@@ -37,7 +23,6 @@
 
   &__secondary {
     @include MobileText;
-
     margin-bottom: 32px;
     padding: 0 64px;
   }

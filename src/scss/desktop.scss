@@ -63,31 +63,34 @@
     margin-top: 90px;
 
     &__avatar {
-      width: 178px;
-      height: 178px;
+      width: 228px;
+      height: 228px;
       margin-top: 34px;
       margin-bottom: 40px;
-      box-shadow: 0 0 24px $Grey4;
+      box-shadow: 0 3px 24px 5px $Grey2;
     }
 
     &__cloud {
       display: inline-block;
       position: absolute;
-      top: 75px;
+      top: 50px;
+      width: 230px;
+      height: 110px;
+      background-image: url(../assets/img/conversation.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
 
     &__cloudTxt {
-      background-color: $Blue;
+      font-family: "Charmonman", cursive;
+      letter-spacing: 5px;
+      position: relative;
       font-weight: 700;
-      color: $White;
-      width: 230px;
-      height: 72px;
+      color: $Grey4;
       font-size: 32px;
-      border-radius: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: center;
+      top: 30px;
+      left: 5px;
     }
 
     &__cloudImg {

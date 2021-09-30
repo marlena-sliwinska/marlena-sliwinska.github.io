@@ -1,5 +1,11 @@
 .mySkills {
-  background-color: $Blue;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 7%,
+    rgba(9, 121, 116, 1) 57%,
+    rgba(97, 205, 240, 1) 89%
+  );
   font-size: 16px;
   line-height: 24px;
   color: $BlueLight;

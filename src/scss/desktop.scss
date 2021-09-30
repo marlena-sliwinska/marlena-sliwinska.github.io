@@ -1,3 +1,20 @@
+@keyframes bracketLeft {
+  from {
+    left: -480px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes bracketRight {
+  from {
+    left: -1480px;
+  }
+  to {
+    left: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .projects__box {
     display: inline-block;
@@ -78,19 +95,13 @@
       left: -70px;
     }
 
-    &__brackets {
-      background-image: url(../assets/img/brackets.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: top center;
-    }
-
     &__primary {
       @include Header200;
       padding: 0 70px;
       max-width: 1000px;
       margin: 0 auto;
       margin-bottom: 48px;
+      display: inline-block;
     }
 
     &__secondary {
@@ -125,5 +136,24 @@
       @include Text;
       color: $TextDefault;
     }
+  }
+  .aboutMe__brackets::before,
+  .aboutMe__brackets::after {
+    content: "";
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+    background-image: url("../assets/img/code.svg");
+    background-repeat: no-repeat;
+    stroke: red;
+    position: relative;
+    top: 35px;
+  }
+  .aboutMe__brackets::before {
+    animation: bracketLeft 0.8s ease-in-out;
+  }
+  .aboutMe__brackets::after {
+    animation: bracketRight 0.8s ease-in-out;
   }
 }

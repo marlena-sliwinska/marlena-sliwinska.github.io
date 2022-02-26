@@ -5,14 +5,12 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  max-width: 100vw;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto+Mono&display=swap");
@@ -35,11 +33,9 @@ body {
 
 body {
   font-family: "Nunito", sans-serif;
-  width: 100%;
-  // display: flex;
-  // flex-flow: column;
-  // align-items: center;
+  // width: 100%;
   text-align: center;
+  overflow-x: hidden;
 }
 
 @import "desktop";

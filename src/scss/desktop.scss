@@ -26,8 +26,8 @@
   .mySkills {
     display: grid;
     grid-template-areas:
-      "header header header"
-      "first second third";
+      "header header"
+      "first second";
     max-width: 1184px;
     margin: 0 auto;
 

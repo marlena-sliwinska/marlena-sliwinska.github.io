@@ -4,11 +4,13 @@ console.log("Hi, My name is Marlena. Nice to meet you");
 fetch("https://api.github.com/users/marlena-sliwinska/repos")
   .then((response) => response.json())
   .then((response) => {
+    response.sort(({pushed_at: a}, {pushed_at: b})=>{
+      return new Date(b)-new Date(a)
+    })
+
     for (let repo of response) {
       const { name, description, html_url, homepage } = repo;
       if (description) {
-        console.log(`Project named ${name} - ${description}. 
-          You can find link to repository here:  i srodowisko: ${homepage}`);
         const portfolio = document.querySelector(".project__box--js");
         const myBox = `
         <article class="projects__box ">

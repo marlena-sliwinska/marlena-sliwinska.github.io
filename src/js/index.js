@@ -1,4 +1,5 @@
 import "../scss/main.scss";
+
 console.log("Hi, My name is Marlena. Nice to meet you");
 
 fetch("https://api.github.com/users/marlena-sliwinska/repos")
@@ -54,5 +55,5 @@ fetch("https://api.github.com/users/marlena-sliwinska/repos")
     }
   })
   .catch((error) => {
-    console.log("error");
+    console.log(`Error during fetching repos`, error);
   });

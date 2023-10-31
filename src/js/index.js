@@ -5,7 +5,6 @@ console.log("Hi, My name is Marlena. Nice to meet you");
 fetch("https://api.github.com/users/marlena-sliwinska/repos")
   .then((response) => response.json())
   .then((response) => {
-      console.log(response)
     response.sort(({pushed_at: a}, {pushed_at: b})=>{
       return new Date(b)-new Date(a)
     })
@@ -27,8 +26,7 @@ fetch("https://api.github.com/users/marlena-sliwinska/repos")
             style="padding-bottom: 16px;"
             >${description}</td>
           </tr>
-          <tr>
-          
+          ${homepage && `<tr>
             <td class="projects__label">demo:</td>
             <td class="projects__content"><<a
               title= "${name}"
@@ -37,7 +35,7 @@ fetch("https://api.github.com/users/marlena-sliwinska/repos")
               target="_blank"
               rel="noopener noreferrer"
               >see here</a>></td>
-          </tr>
+          </tr>` }
           <tr>
             <td class="projects__label">github:</td>
             <td class="projects__content"><<a 
